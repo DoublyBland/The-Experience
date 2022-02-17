@@ -62,6 +62,10 @@ button {
     background-color: rgb(95, 0, 0);
  }
 
+ .darken2 {
+    background-color: darkblue;
+ }
+
  #red {
     background-color: red;
     margin: 20px;

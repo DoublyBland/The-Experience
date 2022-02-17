@@ -25,22 +25,29 @@ function experience2() {
 function heArrives(person) {
     console.log(person)
     console.log("begin");
-    let audio = document.getElementById('audio');
-    audio.play();
     if(person === "jer"){
+        let audio = document.getElementById('audio');
+        audio.play();
         console.log("test")
         let him = document.getElementById('jer');
         him.classList.add('fadeIn')
         setTimeout(changeBG, 5000)
     }
     else if(person === "riley") {
+        let audio = document.getElementById('audio2');
+        audio.play();
         let him = document.getElementById('riley');
         him.classList.add('fadeIn')
-        setTimeout(changeBG, 5000)
+        setTimeout(changeBG2, 5000)
     }
 }
 
 function changeBG() {
     let bg = document.getElementById('container');
     bg.classList.add('darken')
+}
+
+function changeBG2() {
+    let bg = document.getElementById('container');
+    bg.classList.add('darken2')
 }
