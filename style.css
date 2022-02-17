@@ -1,0 +1,63 @@
+img {
+    opacity: 0;
+    -webkit-animation-duration: 60s;animation-duration: 60s;
+    -webkit-animation-fill-mode: both;animation-fill-mode: both;
+    height: 5px;
+    width: 5px;
+    transition: width 70s ease-in, height 70s ease-in
+}
+
+div {
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: background-color 45s ease-out;
+  -moz-transition: background-color 45s ease-out;
+  -o-transition: background-color 45s ease-out;
+  transition: background-color 45s ease-out;
+}
+
+button {
+    font-size: 32px;
+    -webkit-animation-duration: 2s;animation-duration: 2s;
+    -webkit-animation-fill-mode: both;animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+ }
+ 
+ @keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+ }
+ 
+ .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+ }
+
+ @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ 
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    height: 1500px;
+    width: 1000px;
+    /* transform: scale(50); */
+ }
+
+ .darken {
+    background-color: rgb(95, 0, 0);
+ }
