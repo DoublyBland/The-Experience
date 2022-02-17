@@ -1,21 +1,43 @@
-let begin = document.getElementById('begin');
+let red = document.getElementById('red');
+let blue = document.getElementById('blue')
 
-begin.addEventListener('click', experience);
+red.addEventListener('click', experience);
+blue.addEventListener('click', experience2)
 
 function experience() {
-    begin.classList.add('fadeOut')
+    red.classList.add('fadeOut')
+    blue.classList.add('fadeOut')
     console.log("starting...")
-    setTimeout(heArrives, 1000)
-    begin.style.display  = "none";
+    setTimeout(heArrives("jer"), 1000)
+    red.style.display  = "none";
+    blue.style.display = "none";
 }
 
-function heArrives() {
+function experience2() {
+    red.classList.add('fadeOut')
+    blue.classList.add('fadeOut')
+    console.log("starting...")
+    setTimeout(heArrives("riley"), 1000)
+    red.style.display  = "none";
+    blue.style.display = "none";
+}
+
+function heArrives(person) {
+    console.log(person)
     console.log("begin");
     let audio = document.getElementById('audio');
     audio.play();
-    let him = document.getElementById('him');
-    him.classList.add('fadeIn')
-    setTimeout(changeBG, 5000)
+    if(person === "jer"){
+        console.log("test")
+        let him = document.getElementById('jer');
+        him.classList.add('fadeIn')
+        setTimeout(changeBG, 5000)
+    }
+    else if(person === "riley") {
+        let him = document.getElementById('riley');
+        him.classList.add('fadeIn')
+        setTimeout(changeBG, 5000)
+    }
 }
 
 function changeBG() {
